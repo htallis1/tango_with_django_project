@@ -12,7 +12,6 @@ def index(request):
     context_dict['pages'] = pages_list
     return render(request, 'rango/index.html', context=context_dict)
     
-
 def about(request):
     context_dict = {'newboldmessage': 'This tutorial has been put together by Hannah.'}
     return render(request, 'rango/about.html', context=context_dict)
@@ -28,6 +27,11 @@ def show_category(request, category_name_slug):
         context_dict['category'] = None
         context_dict['pages'] = None
     return render(request, 'rango/category.html', context=context_dict)
+
+
+
+        
+
 
     
 
